@@ -1,0 +1,49 @@
+
+#contenido-traductor{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: auto;
+}
+#salida{
+    display: none;
+}
+.title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.title h2{
+    padding-right: 10px;
+}
+#contenido-traductor .row .title button {
+  cursor: pointer;
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  font-size: inherit;
+    margin-bottom: 5px;
+    background-color: #337ab7;
+}
+.row .titulo {
+    font-weight: normal;
+    font-family: "Ancizar sans", Tahoma, Geneva, sans-serif;
+    margin-bottom: 5PX;
+}
+#contenido-traductor  #entrada  form .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+#contenido-traductor  #entrada  form .contenedor .left{
+    width: 50%;
+}
+#contenido-traductor  #entrada  form .contenedor .right{
+    width: 50%;
+}
+#contenido-traductor .row .titulo {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+

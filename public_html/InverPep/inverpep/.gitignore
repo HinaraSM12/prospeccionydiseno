@@ -1,0 +1,4 @@
+/venv/
+.idea/misc.xml
+.idea/inverpep.iml
+__pycache__/app.cpython-37.pyc

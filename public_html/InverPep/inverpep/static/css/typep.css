@@ -1,0 +1,36 @@
+/*
+Amount of space shown in window 100vh == 100%
+*/
+.graph_typ{
+	height: 85vh;
+}
+
+.info_typ{
+	height: 85vh;
+}
+
+.input_typ {
+	height: 8vh;
+}
+
+/*
+Enumeration in the input text
+*/
+
+span#typePrompt {
+  display:none;
+  padding-left: 15px;
+  font-size: 0.75em;
+}
+
+input#aminoacid:hover + span#typePrompt {
+  /*display: inline;*/
+}
+
+input#aminoacid:focus + span#typePrompt {
+  /*display: inline;*/
+}
+
+input#aminoacid {
+  letter-spacing: 4px;
+}

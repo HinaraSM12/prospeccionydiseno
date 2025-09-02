@@ -1,0 +1,14 @@
+#contenido-traductor{
+    width: auto;
+    max-width: 1200px;
+    margin: auto;
+}
+#salida{
+    max-width: 1200px;
+    text-align: right;
+    word-wrap: break-word;
+    padding-top: 30px;
+}
+#salida p{
+    word-wrap: break-word;
+}

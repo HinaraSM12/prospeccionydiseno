@@ -1,0 +1,5 @@
+# inverpep
+##librerias:
+
+* Flask:2.1.2
+* jinja2:3.1.2

@@ -1,0 +1,36 @@
+/*Ie-fix para Internet explorer*/
+.transbox{
+	background-color: #eaeaea;
+}
+
+ .gsc-search-button, .gsc-search-button *{
+background-color: #50992e !important;
+}
+
+.cse input.gsc-search-button, input.gsc-search-button {
+filter: none !important;
+}
+
+
+.gsc-search-button *{
+background-color: none;
+
+}
+
+.cse input.gsc-search-button, input.gsc-search-button{
+background-color: #50992e !important;
+}
+.darkbox{
+	background-color: #333 !important;
+}
+
+
+.btn-group, .btn-group-vertical{
+float:left;
+}
+
+
+.gsc-search-button{
+background: none;
+}
+

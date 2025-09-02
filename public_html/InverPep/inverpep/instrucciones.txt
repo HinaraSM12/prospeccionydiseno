@@ -1,0 +1,17 @@
+instrucciones pata el funcionamiento de la pagina
+requisitos:
+python
+virtualenv
+dentro de la carpeta  inverpep seguir los suiguientes pasos
+1. crear el entorno virtual
+python3 -m venv traductor
+2.activar entorno virtual
+En Windows, ejecuta:
+traductor\Scripts\activate.bat
+En Unix o MacOS, ejecuta:
+source traductor/bin/activate
+3.instalar librerias
+pip install -r requirements.txt
+4.deplegar la aplicacion por el puerto 5000
+gunicorn --bind 0.0.0.0:5000 app:app
+#el puerto se puede cambiar segun la disponibilidad

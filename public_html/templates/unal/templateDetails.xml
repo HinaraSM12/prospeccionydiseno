@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>unal</name><!-- name the template -->
+	<creationDate>2014-09-24</creationDate><!-- the date your are beginn to code -->
+	<author>unal sede medellin</author><!-- your name (oops, I repeat myself) -->
+	<copyright>Copyright © 2014 unal.edu.co</copyright><!-- for who you are coding -->
+	<authorEmail>soporteweb_med@unal.edu.co</authorEmail><!-- your email address -->
+	<authorUrl></authorUrl><!-- your url -->
+	<version>1.0</version><!-- give your template a number -->
+	<description><![CDATA[ 
+		<h1>unal</h1>
+		<p>Created by <a href="http://unal.edu.co" target="_blank">unal.edu.co | unal.edu.co</a>.</p>
+	]]></description><!-- change the description as you like -->
+	
+	<files><!-- no need to change -->
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>scss</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions><!-- define the positions for modules here -->
+		<position>menu</position>
+		<position>home-left</position>
+		<position>home-right</position>
+				
+		<position>component-top</position>
+		<position>component-bottom</position>
+		
+		<position>component-left</position>
+		<position>component-right</position>
+		
+		<position>bottom-page</position>
+		<position>background-top-image</position>
+		<position>background-top-inside</position>
+		
+		<position>sede-left-top</position>
+		<position>sede-center-top</position>
+		<position>sede-right-top</position>
+		<position>sede-left-bottom-top</position>
+		<position>sede-left-bottom-bottom</position>
+		<position>sede-center-bottom-top</position>
+		<position>sede-center-bottom-bottom</position>
+		<position>sede-right-bottom-top</position>
+		<position>sede-right-bottom-bottom</position>
+		
+		<position>dep-row1-a-left</position>
+		<position>dep-row1-a-right</position>
+		<position>dep-row1-b</position>
+		<position>dep-row2-left</position>
+		<position>dep-row2-right</position>
+		<position>dep-row3-left</position>
+		<position>dep-row3-right</position>
+		
+		<position>dep-2c-row1-left</position>
+		<position>dep-2c-row1-right</position>
+		<position>dep-2c-row2-left</position>
+		<position>dep-2c-row2-right</position>
+		<position>menu-derecha</position>
+		<position>actualizacion</position>
+		<position>banner-1</position>
+		<position>banner-2</position>
+		<position>prefooter</position>
+		<!--fin de las nuevas posiciones-->		
+		<position>debug</position>
+  		<position>hidden</position>
+
+	</positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="backgroundImage" class="" type="media" label="Imagen de fondo" description="Imagen de fondo de la pagina principal"/>
+				<field name="backgroundDescription" class="" type="text" label="Descripción de la imagen de fondo" description="Descripcion de la imagen de fondo de la pagina principal"/>
+				<field name="backgroundTop" class="" type="media" label="Imagen Superior" description="Imagen superior de la planitilla"/>
+				<field name="templateColor" class="" type="color" default="#50992E"
+					label="Color de la plantilla"
+					description="Color de los elementos de la plantilla" />
+			<field name="direccion" class="" type="text" label="Direccion" description="Direccion fisica del contacto" default='Calle 59 A N 63-20 Edif. 21 - Of. 111'/>
+			<field name="email" class="" type="text" label="Email" description="Direccion de correo electronico" default='webmaster@unal.edu.co'/>
+	<field name="email" class="" type="text" label="Email" description="Direccion de correo electronico" default='webmaster@unal.edu.co'/>
+	<field name="telefono" class="" type="text" label="Telefono" description="Telefono de contacto" default='4309620'/>
+
+				
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

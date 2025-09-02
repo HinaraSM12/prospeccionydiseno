@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  php56-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php56-apache
+    volumes:
+      - ./public_html/InverPep:/var/www/html
+    ports:
+      - "8080:80"

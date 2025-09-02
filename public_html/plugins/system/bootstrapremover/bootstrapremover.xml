@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>BootstrapRemover</name>
+	<author>Unal Medellin</author>
+	<creationDate>November 2014</creationDate>
+	<version>1</version>
+	<description>Remueve la inclusion de bootstrap, para evitar problemas con la plantilla</description>
+	<files>
+		<filename plugin="bootstrapremover">bootstrapremover.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+</extension>
