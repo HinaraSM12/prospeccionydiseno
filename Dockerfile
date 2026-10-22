@@ -1,23 +1,17 @@
-# Usa una imagen oficial de PHP 5.6 con Apache
-FROM php:5.6-apache
+# Imagen oficial de PHP 8.3 con Apache
+FROM php:8.3-apache
 
-# Cambiar repositorios a archive.debian.org (porque stretch ya está EOL)
-RUN sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list \
-    && sed -i 's|security.debian.org|archive.debian.org|g' /etc/apt/sources.list \
-    && sed -i '/stretch-updates/d' /etc/apt/sources.list
-
-# Instala dependencias necesarias para compilar extensiones (ignorando firmas caducadas)
-RUN apt-get update && apt-get install -y --allow-unauthenticated \
-    libmcrypt-dev \
+# Dependencias de sistema (sin mcrypt: eliminado en PHP 8)
+RUN apt-get update && apt-get install -y --no-install-recommends \
     zip \
     unzip \
     git \
-    && docker-php-ext-install mcrypt
+    && rm -rf /var/lib/apt/lists/*
 
 # Habilitar mod_rewrite de Apache (muy usado en proyectos viejos)
 RUN a2enmod rewrite
 
-# Instalar Composer 2.2 (compatible con PHP 5.6)
+# Instalar Composer 2.2
 RUN curl -sS https://getcomposer.org/installer | php -- --version=2.2.21 --install-dir=/usr/local/bin --filename=composer
 
 # Copia tu proyecto al contenedor

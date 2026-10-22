@@ -1,0 +1,12 @@
+.git
+.bash_history
+.bashrc
+.kshrc
+.viminfo
+.Xauthority
+.cache
+.ssh
+.env
+.env.*
+*.sql
+public_html
